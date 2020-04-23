@@ -34,7 +34,7 @@ namespace jijaWEB.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                return BadRequest(ModelState);//ntct
             }
 
             var users = await _context.Users.FindAsync(id);
